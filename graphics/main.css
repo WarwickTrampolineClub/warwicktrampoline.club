@@ -1,0 +1,320 @@
+w html, body {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.block {
+	overflow: auto;
+	width: 100%;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding: 20px;
+}
+
+.half-block {
+	float: left;
+	width: 50%;
+}
+
+	text {
+		float: left;
+		margin:2.5%;
+	}
+	
+.club {
+	float: right;
+	width: 200px;
+}
+
+/* Shutter Out Horizontal */
+.button {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+  background-color: #e1e1e1;
+  padding: 15px 25px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ED1B24;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.button:hover, .button:focus, .button:active {
+  color: white;
+}
+.button:hover:before, .button:focus:before, .button:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+table {
+	margin: 20px auto;
+}
+
+td {
+	padding: 6px;
+}
+
+.table_left {
+	font-weight: bold;
+}
+
+.portrait {
+	margin: 15px;
+	width: 250px;
+	height: 300px;
+	float: left;
+}
+/* Apply Only to Header.php */
+
+/* The Warwick tramps logo header */
+	#header	header {
+		width: 100%;
+		padding: 20px 0%;
+	}
+
+		#logo {
+			width: 180px;
+			height: 180px;
+			position: relative;
+			margin-left: -90px;
+			left: 50%;
+		}
+
+/* Navigation bar ( theres some funky js that makes this move in scripts/script.js ) */
+	#header	nav {
+		z-index: 2;
+		background-color: white;
+		width: 100%;
+		position: relative;
+		box-shadow: 0px 2px 4px -2px black;		
+		-moz-box-shadow: 0px 2px 4px -2px black;
+		-webkit-box-shadow: 0px 2px 4px -2px black;
+	}
+
+	#header nav .inner {
+		width:100%;
+		max-width:960px;
+		margin:0 auto;
+	}
+
+	#header nav .inner ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		display: block
+	}
+		#header nav .inner ul li {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+		}
+
+		#header nav .inner ul li a {
+			color: black;
+			text-decoration: none;
+			display: block;
+			padding: 15px 25px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 14px;
+			position: relative;
+			z-index: 0;  
+			-moz-osx-font-smoothing: grayscale;
+			position: relative;
+			-webkit-transition-property: color;
+			transition-property: color;
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+		}
+		
+		#header nav .inner ul li a:hover {
+			color: white;
+		}
+		
+		#header nav .inner ul li a:hover:before {
+			height: 100%;
+		}
+		#header nav .inner ul li a:before {
+			content: " ";
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 0;
+			width: 100%;
+			background: #ED1B24;
+			z-index: -1;
+			-webkit-transition: height .25s;
+			-moz-transition: height .25s;
+			-ms-transition: height .25s;
+			-o-transition: height .25s;
+			transition: height .25s;
+		}
+
+#header .fixed {
+	position: fixed;
+}
+
+/* End header.php */
+
+/* footer.php stuff */
+
+#footer {
+	background-color: #ED1B24;
+	color: white;
+	padding: 0% 20px;
+}
+
+#footer div {
+	overflow: auto;
+	margin: 0px auto;
+	width: 100%;
+	max-width: 900px;
+}
+
+	#footer ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		#footer ul li {
+			display: inline-block;
+		}
+
+		#footer ul li a {
+			color: white;
+			display: block;
+			padding: 15px 25px;
+			font-size: 14px;
+			position: relative;
+			z-index: 0;
+			background: #ED1B24;
+		}
+		
+		#footer ul li #facebook:before {
+			content: " ";
+			background-color: #3b5998;
+		}
+		
+		#footer ul li #twitter:before {
+			content: " ";
+			background-color: #00aced;
+		}
+		
+		#footer ul li #youtube:before {
+			content: " ";
+			background-color: #bb0000;
+		}
+		
+		#footer ul li a:hover:before {
+			height: 100%;
+		}
+		#footer ul li a:before {
+			content: " ";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 0;
+			width: 100%;
+			z-index: -1;
+			-webkit-transition: height .25s;
+			-moz-transition: height .25s;
+			-ms-transition: height .25s;
+			-o-transition: height .25s;
+			transition: height .25s;
+		}
+
+/* end footer.php */
+
+/* 
+ *	Parralax Stuff ( supported by js in scripts/script.js):
+ *
+ *	Edit if you dare.
+ */
+
+			/* background setup */
+	.background {
+		  background-repeat:no-repeat;
+		  /* custom background-position */
+		  background-position:50% 50%;
+		  /* ie8- graceful degradation */
+		  background-position:50% 50%\9 !important;
+	}
+
+	/* fullscreen setup */
+	html, body {
+		  /* give this to all tags from html to .fullscreen */
+		  height:100%;
+	}
+	.fullscreen,
+	.content-a {
+		  width:100%;
+		  min-height:100%;
+	}
+	.not-fullscreen,
+	.not-fullscreen .content-a,
+	.fullscreen.not-overflow,
+	.fullscreen.not-overflow .content-a {
+		  height:100%;
+		  overflow:hidden;
+	}
+
+	/* content centering styles */
+	.content-a {
+		display:table;
+	}
+	.content-b {
+		display:table-cell;
+		  position:relative;
+		vertical-align:middle;
+		text-align:center;
+	}
+
+	/* visual styles */
+	.not-fullscreen {
+		  height:50%;
+	}
+
+/* 
+ * End Parralax
+ */
